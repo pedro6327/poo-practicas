@@ -75,9 +75,9 @@ public class Poo_practica1_ACV {
         perro3.raza = "Pastor Aleman";
         perro3.vacunado = "si"; 
         
-        var moto1 = new Motos();
-        var moto2 = new Motos();
-        var moto3 = new Motos();
+        var moto1 = new Moto();
+        var moto2 = new Moto();
+        var moto3 = new Moto();
         
         moto1.cilindraje = 150;
         moto1.marca = "Kawasaky";

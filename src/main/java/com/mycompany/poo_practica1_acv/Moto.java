@@ -8,7 +8,7 @@ package com.mycompany.poo_practica1_acv;
  *
  * @author kevinandres
  */
-public class Motos {
+public class Moto {
     String marca;
     String color;
     int cilindraje;
