@@ -9,8 +9,8 @@ package p61;
  * @author PEDRO
  */
 public class Auto {
-    
- String placa;
+
+    String placa;
     String marca;
     String nombrePropietario;
     int anio;
@@ -154,13 +154,14 @@ public class Auto {
         return retorno;
     }
 
-    public boolean esClasico(int anioActual, int anioClasico ) {
+    public boolean esClasico(int anioActual, int anioClasico) {
         var retorno = false;
 
         return retorno;
     }
- public double getTasaSolidaria(int anioActual) {
-     /*
+
+    public double getTasaSolidaria(int anioActual) {
+        /*
      edad>20 tasa=0
      edad 0-5 y cilindraje <1500 tasa =15%costo
       edad 0-5 y cilindraje >1500 <2000 tasa =20%costo
@@ -171,44 +172,49 @@ public class Auto {
      edad 15-20 tasa =5%costo
       edad >20 tasa =5%costo
     
-     */
+         */
         var retorno = 0.0d;
         var edad = this.getEdad(anioActual);
-        if (edad <= 5 && this.cilindrajeMotor<1500) {
-            retorno = this.precio*0.15;
-        } else{
-            if (edad <= 5 && this.cilindrajeMotor>1500 && this.cilindrajeMotor<2000) {
-            retorno = this.precio*0.2;
-        } else{ if (edad <= 5 && this.cilindrajeMotor>2000 ) {
-            retorno = this.precio*0.25;
-        } else{ if (edad > 5 && edad <= 15 && this.cilindrajeMotor<1500 ) {
-            retorno = this.precio*0.1;
-   
-        } else{ if (edad > 5 && edad <= 15 && this.cilindrajeMotor>1500 && this.cilindrajeMotor<2000) {
-            retorno = this.precio*0.15;
-        } else{ if (edad > 5 && edad <= 15 && this.cilindrajeMotor>2000) {
-            retorno = this.precio*0.18;  
-        } else{if (edad > 15 && edad <= 20 ) {
-            retorno = this.precio*0.05;     
-        }else{if (edad > 20 ) {
-            retorno = this.precio*0.03;  
-        }
-        
-        }
-        }
-        }
-        
-        }
-            
+        if (edad <= 5 && this.cilindrajeMotor < 1500) {
+            retorno = this.precio * 0.15;
+        } else {
+            if (edad <= 5 && this.cilindrajeMotor > 1500 && this.cilindrajeMotor < 2000) {
+                retorno = this.precio * 0.2;
+            } else {
+                if (edad <= 5 && this.cilindrajeMotor > 2000) {
+                    retorno = this.precio * 0.25;
+                } else {
+                    if (edad > 5 && edad <= 15 && this.cilindrajeMotor < 1500) {
+                        retorno = this.precio * 0.1;
+
+                    } else {
+                        if (edad > 5 && edad <= 15 && this.cilindrajeMotor > 1500 && this.cilindrajeMotor < 2000) {
+                            retorno = this.precio * 0.15;
+                        } else {
+                            if (edad > 5 && edad <= 15 && this.cilindrajeMotor > 2000) {
+                                retorno = this.precio * 0.18;
+                            } else {
+                                if (edad > 15 && edad <= 20) {
+                                    retorno = this.precio * 0.05;
+                                } else {
+                                    if (edad > 20) {
+                                        retorno = this.precio * 0.03;
+                                    }
+
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
             }
-        
+
         }
-        
-    }
         return retorno;
- }
- 
- 
+    }
+
     public int getEdad(int anioActual) {
         var retorno = 0;
         retorno = anioActual - this.anio;
@@ -226,30 +232,24 @@ public class Auto {
 
     public boolean esPLacaValida() {
         var retorno = false;
-        var longitud=this.placa.length();
-        if (longitud==7) {
-            var char1=this.placa.charAt(0);
-            var char2=this.placa.charAt(1);
-            var char3=this.placa.charAt(2);
-            var char4=this.placa.charAt(3);
-            var char5=this.placa.charAt(4);
-            var char6=this.placa.charAt(5);
-            var char7=this.placa.charAt(6);
-            
-            if (Character.isLetter(char1) && Character.isLetter(char2)&& Character.isLetter(char3)
-                &&  Character.isDigit(char4)&&  Character.isDigit(char5)&&  Character.isDigit(char6) ) {
-                retorno= true;
+        var longitud = this.placa.length();
+        if (longitud == 7) {
+            var char1 = this.placa.charAt(0);
+            var char2 = this.placa.charAt(1);
+            var char3 = this.placa.charAt(2);
+            var char4 = this.placa.charAt(3);
+            var char5 = this.placa.charAt(4);
+            var char6 = this.placa.charAt(5);
+            var char7 = this.placa.charAt(6);
+
+            if (Character.isLetter(char1) && Character.isLetter(char2) && Character.isLetter(char3)
+                    && Character.isDigit(char4) && Character.isDigit(char5) && Character.isDigit(char6)) {
+                retorno = true;
             }
-            
-           
+
         }
-        
-        
-        
+
         return retorno;
     }
-    
-    
 
 }
-
