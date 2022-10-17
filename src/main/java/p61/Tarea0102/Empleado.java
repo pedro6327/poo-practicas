@@ -9,19 +9,29 @@ package p61.Tarea0102;
  * @author PEDRO
  */
 public class Empleado {
-    
-String nombre;
+
+    String nombre;
     int horasTrabajadas;
     double costoHora;
     int anioingreso;
 
-    public double calcularIngresos() {
+    public double calcularIngresos(int anioActual) {
         var sueldo = 0.0d;
+        var retorno = 0.0d;
+        var anios = anioActual - this.anioingreso;
+        var antiguedad = anios * 0.02;
+
         if (this.horasTrabajadas <= 160) {
             sueldo = this.horasTrabajadas * this.costoHora;
+            retorno = sueldo * antiguedad;
+            sueldo = sueldo + retorno;
+
         } else {
             if (this.horasTrabajadas > 160) {
                 sueldo = 160 * this.costoHora;
+                retorno = sueldo * antiguedad;
+                sueldo = sueldo + retorno;
+
             }
         }
         return sueldo;
@@ -41,7 +51,7 @@ String nombre;
 
     public double calcularImpuesto(int limite1, int limite2, int limite3) {
         // var retorno = 0.0d;
-        var impuesto = this.calcularBonoHorasExtra() + this.calcularIngresos();
+        var impuesto = this.calcularIngresos(2022);
 
         if (impuesto <= limite1) {
             impuesto = 0.0d;
@@ -62,18 +72,12 @@ String nombre;
         return impuesto;
     }
 
-    public double calcularTotal(int anioActual) {
+    public double calcularTotal() {
         var retorno = 0.0d;
-        var anios = anioActual - this.anioingreso;
-        var antiguedad = anios * 0.02;
-        retorno = this.calcularIngresos() + this.calcularBonoHorasExtra();
-        antiguedad = retorno * antiguedad;
-        retorno = retorno + antiguedad - this.calcularImpuesto(1000, 2500, 4000);
-        System.out.println("El bono del 2% anual  por antiguedad es: " + antiguedad + "$");
+
+        retorno = this.calcularIngresos(2022) + this.calcularBonoHorasExtra() - this.calcularImpuesto(1000, 2500, 4000);
 
         return retorno;
     }
 
 }
-
-
