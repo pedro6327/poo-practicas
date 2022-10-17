@@ -37,21 +37,21 @@ public class Principal {
         System.out.println("El ingreso basico del empleado  es: " + empleado1.calcularIngresos(2022) + "$");
         System.out.println("El ingreso por horas extra del empleado es: " + empleado1.calcularBonoHorasExtra() + "$");
         System.out.println("El impuesto del empleado es: " + empleado1.calcularImpuesto(1000, 2500, 4000) + "$");
-        System.out.println("El ingreso total del empleado es: " + empleado1.calcularTotal() + "$");
+        System.out.println("El ingreso total del empleado es: " + empleado1.calcularTotal(2022,1000,2500,4000) + "$");
         System.out.println("--------------------------------------------------------------------------------");
         System.out.println("EL nombre del empleado2 es: " + empleado2.nombre + " Las horas trabajadas por el empleado2 son: " + empleado2.horasTrabajadas);
         System.out.println("EL año de ingreso del empleado2 es: " + empleado2.anioingreso + " El costo hora es : " + empleado2.costoHora);
         System.out.println("El ingreso basico del empleado  es: " + empleado2.calcularIngresos(2022) + "$");
         System.out.println("El ingreso por horas extra del empleado es: " + empleado2.calcularBonoHorasExtra() + "$");
         System.out.println("El impuesto del empleado es: " + empleado2.calcularImpuesto(1000, 2500, 4000) + "$");
-        System.out.println("El ingreso total del empleado es: " + empleado2.calcularTotal() + "$");
+        System.out.println("El ingreso total del empleado es: " + empleado2.calcularTotal(2022,1000,2500,4000) + "$");
         System.out.println("--------------------------------------------------------------------------------");
         System.out.println("EL nombre del empleado3 es: " + empleado3.nombre + " Las horas trabajadas por el empleado3 son: " + empleado3.horasTrabajadas);
         System.out.println("EL año de ingreso del empleado3 es: " + empleado3.anioingreso + " El costo hora es : " + empleado3.costoHora);
         System.out.println("El ingreso basico del empleado  es: " + empleado3.calcularIngresos(2022) + "$");
         System.out.println("El ingreso por horas extra del empleado es: " + empleado3.calcularBonoHorasExtra() + "$");
         System.out.println("El impuesto del empleado es: " + empleado3.calcularImpuesto(1000, 2500, 4000) + "$");
-        System.out.println("El ingreso total del empleado es: " + empleado3.calcularTotal() + "$");
+        System.out.println("El ingreso total del empleado es: " + empleado3.calcularTotal(2022,1000,2500,4000) + "$");
 
     }
 
