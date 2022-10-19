@@ -28,7 +28,7 @@ public class Principal2 {
         System.out.println("el arreglo ingresado es: ");
         for (int i = 0; i < dimension; i++) {
             System.out.println(arreglo[i]);
-        }
+        } 
 
     }
 }
