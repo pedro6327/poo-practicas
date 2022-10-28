@@ -46,13 +46,12 @@ public class Principaleje01_03 {
         //----------------------------------------------------------------------------------------//
         var profesor1 = new Profesor("Licenciado", "Jorge Andrade", 1989);
         var clase1 = new Asignatura("Algebra Lineal", 6);
-        var grupo = new Grupo(3, 45, profesor1);
-        clase1.setMateria(grupo);
+        var grupo = new Grupo(3, 45, profesor1,clase1);
         
         var profesor2 = new Profesor("Ingeniero", "Luis Calle", 1986);
         var clase2 = new Asignatura("Calculo Diferencial", 14);
-        var grupo2 = new Grupo(4, 50, profesor2);
-        clase2.setMateria(grupo2);
+        var grupo2 = new Grupo(4, 50, profesor2,clase2);
+       
 
          
         

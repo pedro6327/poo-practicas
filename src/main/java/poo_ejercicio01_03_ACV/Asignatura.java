@@ -12,13 +12,12 @@ public class Asignatura {
 
     private String nombre;
     private int horasSemanales;
-    private Grupo materia;
+ 
 
     public String mostrarInfoAsignatura() {
-        return "El nombre de la asignatura es: " + this.getNombre() + " las horas semanales de la asignatura es: " + this.getHorasSemanales()
-                + ". El numero del grupo es: " + this.materia.getNumeroGrupo() + " EL profesor es  :" + this.materia.getDocencia().getNombre();
-
+        return "Las horas semanales de la asignatura es : " + this.getHorasSemanales();
     }
+    
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -36,13 +35,6 @@ public class Asignatura {
         return horasSemanales;
     }
 
-    public void setMateria(Grupo materia) {
-        this.materia = materia;
-    }
-
-    public Grupo getMateria() {
-        return materia;
-    }
 
     public Asignatura(String nombre, int horasSemanales) {
         this.nombre = nombre;
