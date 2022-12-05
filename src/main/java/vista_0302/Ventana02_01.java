@@ -59,9 +59,8 @@ public class Ventana02_01 extends JFrame {
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
 
-        
+        this.jPanelList.get(0).setLayout(new GridLayout(9, 1));
         this.jPanelList.get(0).setBackground(Color.WHITE);
-        this.jPanelList.get(0).setLayout(new GridLayout(10, 1));
         this.jPanelList.get(1).setBackground(Color.CYAN);
         this.jPanelList.get(2).setBackground(Color.WHITE);
         this.jPanelList.get(3).setBackground(Color.WHITE);

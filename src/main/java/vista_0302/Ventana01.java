@@ -61,8 +61,8 @@ public class Ventana01 extends JFrame {
         this.jPanelList.get(0).setLayout(new GridLayout(10, 1));
         this.jPanelList.get(0).setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder()));
 
-        this.jPanelList.get(0).setBackground(Color.WHITE);
         this.jPanelList.get(0).setLayout(new GridLayout(5, 1));
+        this.jPanelList.get(0).setBackground(Color.WHITE);
         this.jPanelList.get(1).setBackground(Color.CYAN);
         this.jPanelList.get(2).setBackground(Color.WHITE);
         this.jPanelList.get(3).setBackground(Color.WHITE);
