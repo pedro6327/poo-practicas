@@ -53,11 +53,13 @@ public class Ventana02_02 extends JFrame {
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
-        //-------------------------------------------------------------//
-        this.jPanelList.get(0).setBackground(Color.WHITE);
+
+        
+        this.jPanelList.get(0).setBackground(Color.CYAN);
         this.jPanelList.get(0).setLayout(new GridLayout(10, 1));
         this.jPanelList.get(0).setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Personal"));
-        //------------------------------------------------------------//
+    
+        
         this.jPanelList.get(1).setBackground(Color.CYAN);
         this.jPanelList.get(2).setBackground(Color.WHITE);
         this.jPanelList.get(3).setBackground(Color.WHITE);
@@ -68,7 +70,9 @@ public class Ventana02_02 extends JFrame {
         this.jPanelList.get(8).setBackground(Color.WHITE);
         this.jPanelList.get(9).setBackground(Color.WHITE);
         this.jPanelList.get(10).setBackground(Color.WHITE);
-        //------------------------------------------------------------//
+
+        
+        
         this.jPanelList.get(0).add(this.jPanelList.get(1));
         this.jPanelList.get(0).add(this.jPanelList.get(2));
         this.jPanelList.get(0).add(this.jPanelList.get(3));
@@ -89,18 +93,19 @@ public class Ventana02_02 extends JFrame {
         this.jLabelList.add(new JLabel("PEDRO ANDRES"));
         this.jLabelList.add(new JLabel("Nacionalidad:"));
         this.jLabelList.add(new JLabel("ECUATORIANA"));
-        this.jLabelList.add(new JLabel("Genero:"));
+        this.jLabelList.add(new JLabel("Género:"));
         this.jLabelList.add(new JLabel("Masculino"));
-        this.jLabelList.add(new JLabel("Correo electronico personal:"));
+        this.jLabelList.add(new JLabel("Correo electrónico personal:"));
         this.jLabelList.add(new JLabel("palvarezn1@est.ups.edu.ec"));
         this.jLabelList.add(new JLabel("Fecha Nacimiento:"));
         this.jLabelList.add(new JLabel("12-05-1999"));
-        this.jLabelList.add(new JLabel("Telefono Domicilio:"));
+        this.jLabelList.add(new JLabel("Télefono Domicilio:"));
         this.jLabelList.add(new JLabel("072801156"));
-        this.jLabelList.add(new JLabel("Telefono Celular:"));
+        this.jLabelList.add(new JLabel("Télefono Celular:"));
         this.jLabelList.add(new JLabel("0984017027"));
         this.jLabelList.add(new JLabel("Whatsapp:"));
-        //-------------------------------------------------//
+
+        
         this.jPanelList.get(1).add(this.jLabelList.get(0));
         this.jPanelList.get(2).add(this.jLabelList.get(1));
         this.jPanelList.get(2).add(this.jLabelList.get(2));

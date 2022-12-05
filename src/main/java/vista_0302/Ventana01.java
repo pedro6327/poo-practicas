@@ -56,6 +56,10 @@ public class Ventana01 extends JFrame {
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
+        
+        this.jPanelList.get(0).setBackground(Color.CYAN);
+        this.jPanelList.get(0).setLayout(new GridLayout(10, 1));
+        this.jPanelList.get(0).setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder()));
 
         this.jPanelList.get(0).setBackground(Color.WHITE);
         this.jPanelList.get(0).setLayout(new GridLayout(5, 1));
@@ -78,7 +82,7 @@ public class Ventana01 extends JFrame {
         this.jLabelList.add(new JLabel("INSCRIBETE"));
         this.jLabelList.add(new JLabel("Seleccione una sede:  *"));
         this.jLabelList.add(new JLabel("Tipo de Documento"));
-        this.jLabelList.add(new JLabel("Ingrese su Identificacion:  *"));
+        this.jLabelList.add(new JLabel("Ingrese su Identificación:  *"));
       
 
 
@@ -101,7 +105,7 @@ public class Ventana01 extends JFrame {
         this.jComboBoxList.get(0).addItem("MATRIZ QUITO");
         this.jComboBoxList.get(0).addItem("MATRIZ GUAYAQUIL");
        
-        this.jComboBoxList.get(1).addItem("CEDULA");
+        this.jComboBoxList.get(1).addItem("CÉDULA");
         this.jComboBoxList.get(1).addItem("PASAPORTE");
 
         this.jPanelList.get(2).add(this.jComboBoxList.get(0));
