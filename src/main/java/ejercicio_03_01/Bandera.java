@@ -31,7 +31,7 @@ public class Bandera extends JFrame {
     public Bandera() throws HeadlessException {
         this.setTitle("Bandera");
         this.setSize(300, 150);
-        this.setLocation(200, 200);
+        this.setLocation(200, 450);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.iniciarPaneles();
         this.iniciarLabels();
@@ -102,12 +102,8 @@ public class Bandera extends JFrame {
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
+     
+        
     
         
         this.jPanelList.get(0).setLayout(new BorderLayout());

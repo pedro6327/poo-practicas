@@ -53,14 +53,16 @@ public class VentanaFlowLayout extends JFrame {
         this.jButtonList.add(new JButton());
         this.jButtonList.add(new JButton());
         this.jButtonList.add(new JButton());
+        this.jButtonList.get(0) .setBackground(Color.red);
+  
 
         this.jButtonList.get(0).setText("Button 1");
-        this.jButtonList.get(1).setText("2");
+        this.jButtonList.get(1).setText("2 cx xc x ");
         this.jButtonList.get(2).setText("Button 3");
         this.jButtonList.get(3).setText("Long-Named Button 4");
         this.jButtonList.get(4).setText("Button5");
 
-        this.jPanelList.get(0).add(this.jButtonList.get(0));
+        this.jPanelList.get(0).add(this.jButtonList.get(0) );
 
         this.jPanelList.get(0).add(this.jButtonList.get(1));
 
