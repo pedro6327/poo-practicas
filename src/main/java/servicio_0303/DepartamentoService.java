@@ -14,6 +14,8 @@ import modelo_0303.Departamento;
 public interface DepartamentoService {
     
      public void crear(Departamento departamento);
+     
+    public Departamento buscarPorCodigo(int codigo);
 
     public abstract void modificar(int codigo, Departamento departamentoModificado);
 

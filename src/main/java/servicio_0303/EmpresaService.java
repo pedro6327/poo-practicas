@@ -14,11 +14,13 @@ import modelo_0303.Empresa;
 
 public interface EmpresaService {
     
-     public void crear(Empresa empresa);
+    public void crear(Empresa empresa);
 
     public abstract void modificar(int telefono, Empresa empresaModificado);
 
     public abstract void eliminar(int telefono);
+    
+   
 
     public abstract List<Empresa> listar();
     

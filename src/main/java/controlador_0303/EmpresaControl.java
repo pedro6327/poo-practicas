@@ -11,6 +11,7 @@ package controlador_0303;
 import java.time.LocalDate;
 import java.util.List;
 import modelo_0303.Empresa;
+import servicio_0303.DepartamentoServiceImpl;
 import servicio_0303.EmpresaServiceImpl;
 import vista_0303.VentanaEmpresa;
 
@@ -20,7 +21,9 @@ import vista_0303.VentanaEmpresa;
  */
 public class EmpresaControl {
     
-    private EmpresaServiceImpl empresaServiceImpl;
+    
+    private EmpresaServiceImpl empresaServiceImpl  = new EmpresaServiceImpl();
+    private DepartamentoServiceImpl departamentoServiceImpl  = new DepartamentoServiceImpl();
     
     
 
@@ -62,10 +65,7 @@ public class EmpresaControl {
         
     }
     
-    
-    
-    
-    
+
     
     public List<Empresa> listar(){
         return this.empresaServiceImpl.listar();

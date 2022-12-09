@@ -18,18 +18,19 @@ public class Empleado {
     private int codigo;
     private String puesto;
     private LocalDate fechaNacimiento;
-   
-   
-    
+    private Empleado empleado;
 
-    public Empleado(String nombreEmpleado, int codigo, String puesto, LocalDate fechaNacimiento) {
+    public Empleado(String nombreEmpleado, int codigo, String puesto, LocalDate fechaNacimiento, Empleado empleado) {
         this.nombreEmpleado = nombreEmpleado;
         this.codigo = codigo;
         this.puesto = puesto;
         this.fechaNacimiento = fechaNacimiento;
-      
+        this.empleado = empleado;
     }
-    
+
+    public Empleado(int codigo, String nombre, String puesto, LocalDate of) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
     public String getNombreEmpleado() {
         return nombreEmpleado;
@@ -47,14 +48,6 @@ public class Empleado {
         this.codigo = codigo;
     }
 
-    public LocalDate getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(LocalDate fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
-
     public String getPuesto() {
         return puesto;
     }
@@ -63,14 +56,33 @@ public class Empleado {
         this.puesto = puesto;
     }
 
-    @Override
-    public String toString() {
-        return "Empleado{" + "nombreEmpleado=" + nombreEmpleado + 
-                ", codigo="  + codigo + 
-                ", puesto="  + puesto + 
-                ", fechaNacimiento="  + fechaNacimiento + '}';
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
     }
 
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+
+    public void setEmpleado(Empleado empleado) {
+        this.empleado = empleado;
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado{" + "nombreEmpleado=" + nombreEmpleado + ", codigo de la =" 
+                + codigo + ", puesto=" + puesto + ", fechaNacimiento=" 
+                + fechaNacimiento + ", empleado=" + empleado + '}';
+    }
+   
+   
+    
+
+ 
 
 
     

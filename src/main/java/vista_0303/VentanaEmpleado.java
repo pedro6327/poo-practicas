@@ -118,7 +118,7 @@ public class VentanaEmpleado extends JFrame implements ActionListener {
         this.jButtonList.get(1).addActionListener(this);
         this.jButtonList.get(2).addActionListener(this);
 
-        DefaultTableModel modelo = new DefaultTableModel();
+        /*DefaultTableModel modelo = new DefaultTableModel();
         modelo.addColumn("Nombre");
         modelo.addColumn("Codigo");
         modelo.addColumn("Puesto");
@@ -134,17 +134,17 @@ public class VentanaEmpleado extends JFrame implements ActionListener {
         
 */
 
-        this.jTableList.add(new JTable(modelo));
-        this.jTableList.get(0).setBounds(20, 220, 500, 300);
-        this.jPanelList.get(0).add(this.jTableList.get(0));
+        //this.jTableList.add(new JTable(modelo));
+        //this.jTableList.get(0).setBounds(20, 220, 500, 300);
+        //this.jPanelList.get(0).add(this.jTableList.get(0));
 
-        this.JScrollList.add(new JScrollPane(this.jTableList.get(0), ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED));
-        this.JScrollList.get(0).setBounds(20, 220, 500, 300);
-        this.jPanelList.get(0).add(this.JScrollList.get(0));
+        //this.JScrollList.add(new JScrollPane(this.jTableList.get(0), ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED));
+        //this.JScrollList.get(0).setBounds(20, 220, 500, 300);
+        //this.jPanelList.get(0).add(this.JScrollList.get(0));
 
         
-        this.jLabelList.add(new JLabel("Guardado", SwingConstants.LEFT)); 
-        this.jLabelList.get(4).setBounds(20, 190, 250, 20);
+       // this.jLabelList.add(new JLabel("Guardado", SwingConstants.LEFT)); 
+        //this.jLabelList.get(4).setBounds(20, 190, 250, 20);
         
        // this.jTextFieldList.add(new JTextField("dd", 5));
          

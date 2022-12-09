@@ -14,6 +14,7 @@ import modelo_0303.Empleado;
 public interface EmpleadoService {
     
      public void crear(Empleado empleado);
+     
 
     public abstract void modificar(int codigo, Empleado empleadoModificado);
 

@@ -18,6 +18,7 @@ public class Empresa {
     private int codigo;
     private String duenio;
     private LocalDate fechaCreacion;
+    private Departamento departamento;
    
    
     
@@ -73,7 +74,8 @@ public class Empresa {
         return "Empresa{" + "nombreEmpresa=" + nombreEmpresa + 
                 ", codigo="  + codigo + 
                 ", dueño="  + duenio + 
-                ", fechaCreacion="  + fechaCreacion + '}';
+                ", fechaCreacion="  + fechaCreacion + ", departamento="  
+                + nombreEmpresa.toString() +'}';
     }
 
 

@@ -17,7 +17,7 @@ import vista_0303.VentanaEmpleado;
 public class EmpleadoControl {
     
     private EmpleadoServiceImpl empleadoServiceImpl;
-    
+   
     
 
     public EmpleadoControl() {
@@ -36,13 +36,13 @@ public class EmpleadoControl {
         var anio=Integer.valueOf(data[3]).intValue();
         var mes=Integer.valueOf(data[4]).intValue();
         var dia=Integer.valueOf(data[5]).intValue();
-        
-        
+        var empleados = new Empleado(codigo,nombre,puesto,LocalDate.of(anio , mes, dia));
+        this.empleadoServiceImpl.crear(empleados);
         
         if (anio < 1980 && mes > 12 && dia > 31) {
             retorno += " La fecha de nacimiento es incorrecta";
         } else {
-            var empleado = new Empleado(nombre, codigo, puesto, LocalDate.of(anio, mes, dia));
+            var empleado = new Empleado(codigo ,nombre,  puesto, LocalDate.of(anio, mes, dia));
             this.empleadoServiceImpl.crear(empleado);
             
             retorno = "Empleado " + empleado.getNombreEmpleado() + " creado correctamente";
@@ -53,4 +53,5 @@ public class EmpleadoControl {
     public List<Empleado> listar(){
         return this.empleadoServiceImpl.listar();
     } 
+    
 }

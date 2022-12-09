@@ -14,6 +14,7 @@ public class Departamento {
     
     private String nombreDepartamento;
     private int codigo;
+     private Empresa empresa;
 
     public Departamento(String nombreDepartamento, int codigo) {
         this.nombreDepartamento = nombreDepartamento;
@@ -42,7 +43,8 @@ public class Departamento {
 
     @Override
     public String toString() {
-        return "Departamento{" + "nombreDepartamento=" + nombreDepartamento + ", codigo=" + codigo + '}';
+        return "Departamento{" + "nombreDepartamento=" + nombreDepartamento 
+                + ", codigo=" + codigo + '}';
     }
     
 

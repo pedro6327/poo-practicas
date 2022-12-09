@@ -14,7 +14,7 @@ import modelo_0303.Departamento;
  */
 public class DepartamentoServiceImpl implements DepartamentoService {
     
-    private List<Departamento> departamentoList;
+    private static List<Departamento> departamentoList;
     
 
     public DepartamentoServiceImpl() {
@@ -27,6 +27,8 @@ public class DepartamentoServiceImpl implements DepartamentoService {
         this.departamentoList.add(departamento);
  
         }
+    
+    
 
     @Override
     public void modificar(int codigo, Departamento departamentoModificado) {
@@ -53,6 +55,19 @@ public class DepartamentoServiceImpl implements DepartamentoService {
         
         }
 
+    
+     @Override
+    public Departamento buscarPorCodigo(int codigo) {
+        Departamento retorno=null;
+        for(var departamento:this.departamentoList){
+            if(codigo==departamento.getCodigo()){
+                retorno=departamento;
+                break;
+            }
+        }
+        return retorno;
+    }
+    
     @Override
     
     public List<Departamento> listar() {

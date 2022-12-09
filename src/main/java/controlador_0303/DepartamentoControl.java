@@ -13,13 +13,11 @@ import vista_0303.VentanaDepartamento;
 public class DepartamentoControl {
     
       private DepartamentoServiceImpl departamentoServiceImpl;
-    
-    
+
+      
 
     public DepartamentoControl() {
         this.departamentoServiceImpl = new DepartamentoServiceImpl();
-     
-        
     }
 
     
@@ -30,10 +28,8 @@ public class DepartamentoControl {
         var nombre=data[0];
         var codigo=Integer.valueOf(data[1]).intValue();
 
-   
+
         
-        
-       
             var departamento = new Departamento(nombre , codigo );
             this.departamentoServiceImpl.crear(departamento);
             
@@ -41,10 +37,10 @@ public class DepartamentoControl {
                     + " creado correctamente";
        
         return retorno;
-        
-        
-        
     }
+    
+    
+    
     
     public List<Departamento> listar(){
         return this.departamentoServiceImpl.listar();

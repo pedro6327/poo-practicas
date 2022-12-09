@@ -15,7 +15,7 @@ import modelo_0303.Empresa;
 
 public class EmpresaServiceImpl implements EmpresaService {
     
-    private List<Empresa> empresaList;
+    private static List<Empresa> empresaList;
     
 
     public EmpresaServiceImpl() {

@@ -14,7 +14,7 @@ import modelo_0303.Empleado;
  */
 public class EmpleadoServiceImpl implements EmpleadoService {
     
-    private List<Empleado> empleadoList;
+    private static List<Empleado> empleadoList;
     
 
     public EmpleadoServiceImpl() {
@@ -60,6 +60,8 @@ public class EmpleadoServiceImpl implements EmpleadoService {
         return this.empleadoList;
         
         }
+
+  
 
     
     
